@@ -4,10 +4,15 @@ import os
 import json
 import sys
 filename = '/home/' + os.environ["USER"] + '/.local/share/comictracker/book.json'
+def help():
+    print("-a   add book")
+    print("-l   list books")
+    print("-l   display this help")
+if len(sys.argv) == 1:
+    help()
+    sys.exit(0)
 if sys.argv[1] == "-h":
-    print("-a   add media")
-    print("-l   list media")
-    print("-h   display this help")
+    help()
 if sys.argv[1] == "-l":
     print(pd.read_json(filename))
 if sys.argv[1] == "-a":

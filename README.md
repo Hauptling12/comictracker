@@ -1,4 +1,4 @@
-# mediatracker
+# comictracker
  sort and track books and comics
 ## installation
 ```
@@ -9,6 +9,6 @@ cp book.json comic.json ~/.local/share/comictracker/
 cp comictracker.py booktracker.py ~/.local/bin
 ```
 ## man page
-+ `-a` add media
-+ `-l` list media
++ `-a` add comics
++ `-l` list comics
 + `-h` show the man page
